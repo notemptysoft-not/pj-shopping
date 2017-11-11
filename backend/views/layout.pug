@@ -5,11 +5,18 @@ html
 		link(rel='stylesheet', href='/node_modules/font-awesome/css/font-awesome.min.css')
 		link(rel='stylesheet', href='/node_modules/simple-line-icons/css/simple-line-icons.css')
 		link(rel='stylesheet', href='/css/style.css')
-		
 		link(rel='stylesheet', href='/stylesheets/style.css')
+
 	body.app.header-fixed.sidebar-fixed.aside-menu-fixed.aside-menu-hidden
-		
-		block content
+
+		include ./layouts/header
+		.app-body
+
+			include ./layouts/sidebar
+			block content
+			include ./layouts/aside-menu
+
+		include ./layouts/footer
 
 		script(src="/node_modules/jquery/dist/jquery.min.js")
 		script(src="/node_modules/popper.js/dist/umd/popper.min.js")
