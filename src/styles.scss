@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+// .top-banner {
+//     min-width: 720px;
+//     height: 80px;
+//     overflow: hidden;
+
+//     &>a {
+//         background-image: url('./assets/images/top-banner.png');
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         text-indent: -9999rem;
+//         background-repeat: no-repeat;
+//         background-position: center top;
+//     }
+// }
+
+.header {
+    & .site_logo {
+        max-width: none;
+        width: 240px;
+
+        & span.logo {
+            background-image: url('./assets/images/icons.png');
+            background-size: 166px 2322px;
+            background-position: 0 -28px;
+            display: block;
+            width: 166px;
+            height: 40px;
+            text-indent: -999em;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+    }
+
+
+    & .site_search {
+        & input.search {
+            width: 550px;
+        }
+    }
+}
+
+
+.site_promo {
+
+    & .cate {
+        margin-right: 15px;
+        width: 250px
+    }
+
+    & .banner-slider {
+        width: 100%;
+    }
+}
